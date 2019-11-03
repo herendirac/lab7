@@ -2,8 +2,11 @@
 <html>
     <head>
         <title> Pixabay Search (Express Version) </title>
-         <link rel="stylesheet" href="css/styles.css" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+         
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" ></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         
     </head>
     <body>
@@ -13,31 +16,63 @@
             <span>
                 Image Search:
                 <input type="text" id="inputSearch" name="keyword" value=<%=keyword%>>
-                <button id="searchBtn"> Search! </button>
+                <button id="searchBtn">Search
+        <i class='fas fa-camera'></i></button>
                 <select id="orientation" name="orientation">
                     <option val="all">All</option>
                     <option val="horizontal">Horizontal</option>
                     <option val="vertical">Vertical</option>
                 </select>
             </span>
+            
+   
+            
         </form> <br>
-        <div id="imgs">
+        <div id="images">
             <figure>
                 <figcaption>Likes: <%=image1.likes%></figcaption>
-                <img src=<%=image1.largeImageURL %> width=400>
+                <img src=<%=image1.largeImageURL %> width=300>
             </figure>
             <figure>
                 <figcaption>Likes: <%=image2.likes%></figcaption>
-                <img src=<%=image2.largeImageURL %> width=400>
+                <img src=<%=image2.largeImageURL %> width=300>
             </figure>
             <figure>
                 <figcaption>Likes: <%=image3.likes%></figcaption>
-                <img src=<%=image3.largeImageURL %> width=400>
+                <img src=<%=image3.largeImageURL %> width=300>
             </figure>
             <figure>
                 <figcaption>Likes: <%=image4.likes%></figcaption>
-                <img src=<%=image4.largeImageURL %> width=400>
+                <img src=<%=image4.largeImageURL %> width=300>
             </figure>
         </div>
     </body>
 </html>
+
+         <hr>
+        <i class='fas fa-camera'></i>
+        <i class='fas fa-camera'></i>
+        <i class='fas fa-camera'></i>
+        <i class='fas fa-camera'></i>
+        <i class='fas fa-camera'></i>
+        <i class='fas fa-camera'></i>
+<i class='fas fa-camera' style='font-size:24px'></i>
+<i class='fas fa-camera' style='font-size:24px'></i>
+<i class='fas fa-camera' style='font-size:24px'></i>
+<i class='fas fa-camera' style='font-size:24px'></i>
+<i class='fas fa-camera' style='font-size:24px'></i>
+<i class='fas fa-camera' style='font-size:24px'></i>
+
+<i class='fas fa-camera' style='font-size:36px'></i>
+<i class='fas fa-camera' style='font-size:36px'></i>
+<i class='fas fa-camera' style='font-size:36px'></i>
+<i class='fas fa-camera' style='font-size:36px'></i>
+<i class='fas fa-camera' style='font-size:36px'></i>
+<i class='fas fa-camera' style='font-size:36px'></i>
+
+<i class='fas fa-camera' style='font-size:48px;color:red'></i>
+<i class='fas fa-camera' style='font-size:48px;color:red'></i>
+<i class='fas fa-camera' style='font-size:48px;color:red'></i>
+<i class='fas fa-camera' style='font-size:48px;color:red'></i>
+<i class='fas fa-camera' style='font-size:48px;color:red'></i>
+<i class='fas fa-camera' style='font-size:48px;color:red'></i>

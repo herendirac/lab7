@@ -16,8 +16,7 @@ app.get("/", async function(req, res){
  //console.dir("parsedData: " + parsedData); //displays content of the object
  
     // shuffle array
- res.render("index", {
-        "keyword":keyword,"image1":shuffled[0],"image2":shuffled[1],"image3":shuffled[2],"image4":shuffled[3]});
+ res.render("index", {"keyword":keyword,"image1":shuffled[0],"image2":shuffled[1],"image3":shuffled[2],"image4":shuffled[3]});
             
 }); //root route
 
@@ -33,6 +32,12 @@ app.get("/results", async function(req, res){
     res.render("results", {"keyword":keyword,"orientation": orientation,"image1":shuffled[0],"image2":shuffled[1],"image3":shuffled[2],"image4":shuffled[3]});
     
 });//results route
+
+
+//starting server
+app.listen(process.env.PORT, process.env.IP, function(){ //app listener ========
+    console.log("Express server is running...");
+});
 
 
 //Returns all data from the Pixabay API as JSON format
@@ -67,13 +72,6 @@ function getImages(keyword, orientation){
 
 function getWord(){
     let arr = ["Painterly", "abstract", "Botanical", "Realism"];
-    
     let shuffledArr =shufflefy(arr);
-    
     return shuffledArr[0];
 }
-
-//starting server
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("Express server is running...");
-});
