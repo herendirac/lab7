@@ -1,0 +1,26 @@
+#searchBtn
+{
+    color:red;
+}
+body
+{
+    background-color: lightblue;
+    text-align: center;
+    color:red;
+   
+}
+h1
+{
+    color:red;
+    text-align: center;
+}
+#likes
+{
+    text-align: center;
+}
+#images
+{
+    display: flex;
+    justify-content: center;
+}
+
