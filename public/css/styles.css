@@ -4,22 +4,30 @@
 }
 body
 {
-    background-color: lightblue;
+    font-weight: bold;
     text-align: center;
-    color:red;
-   
+    font-size: 20px;
+    background-image: linear-gradient(to right, rgb(255, 51, 51),rgb(255, 184, 51),rgb(255, 255, 102),rgb(0, 185, 0),rgb(77, 77, 255),rgb(159, 26, 255));
 }
-h1
+
+.jumbotron
 {
-    color:red;
-    text-align: center;
+    color:black;
+    font-size: 55px;
+    font-weight: bold;
 }
+
 #likes
 {
     text-align: center;
+    font-weight: bold;
+
 }
 #images
 {
     display: flex;
     justify-content: center;
+    color:black;
+    font-weight: bold;
+    font-size: 40px;
 }
