@@ -8,48 +8,41 @@
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" ></script>
         <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         
-    </head>
+     </head>
     <body>
-
-        <h1> Pixabay Search (Express Version) </h1>
-         <form action="/results" method="GET" id="search">
+        <h1 class="headers">Pixabay Search (express version)</h1>
+        
+        <form action="/results" method="GET" id="search">
             <span>
                 Image Search:
                 <input type="text" id="inputSearch" name="keyword" value=<%=keyword%>>
-                <button id="searchBtn">Search
-        <i class='fas fa-camera'></i></button>
+                <button id="searchBtn"> Search! </button>
                 <select id="orientation" name="orientation">
                     <option val="all">All</option>
                     <option val="horizontal">Horizontal</option>
                     <option val="vertical">Vertical</option>
                 </select>
             </span>
-            
-   
-            
         </form> <br>
-        <div id="images">
+        <div id="imgs">
             <figure>
                 <figcaption>Likes: <%=image1.likes%></figcaption>
-                <img src=<%=image1.largeImageURL %> width=300>
+                <img src=<%=image1.largeImageURL %> width=400>
             </figure>
             <figure>
                 <figcaption>Likes: <%=image2.likes%></figcaption>
-                <img src=<%=image2.largeImageURL %> width=300>
+                <img src=<%=image2.largeImageURL %> width=400>
             </figure>
             <figure>
                 <figcaption>Likes: <%=image3.likes%></figcaption>
-                <img src=<%=image3.largeImageURL %> width=300>
+                <img src=<%=image3.largeImageURL %> width=400>
             </figure>
             <figure>
                 <figcaption>Likes: <%=image4.likes%></figcaption>
-                <img src=<%=image4.largeImageURL %> width=300>
+                <img src=<%=image4.largeImageURL %> width=400>
             </figure>
         </div>
-    </body>
-</html>
-
-         <hr>
+        <hr>
          <marquee behavior="scroll" direction="left">  
 <i class='fas fa-camera' style='font-size:14px;color:red'></i>
 <i class='fas fa-camera' style='font-size:14px;color:red'></i>
@@ -73,3 +66,6 @@
 <i class='fas fa-camera' style='font-size:14px;color:purple'></i>
 <i class='fas fa-camera' style='font-size:14px;color:purple'></i>
 </marquee>  
+    </body>
+</html>
+        
